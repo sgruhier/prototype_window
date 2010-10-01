@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<head>  
+  <script type="text/javascript" src="../javascripts/prototype.js"> </script>
+  <script type="text/javascript" src="../javascripts/effects.js"> </script>                                                        
+  <script type="text/javascript" src="../javascripts/window.js"> </script>
+  <script type="text/javascript" src="../javascripts/window_effects.js"> </script>
+  <script type="text/javascript" src="../javascripts/debug.js"> </script>
+ 	<link href="../themes/default.css" rel="stylesheet" type="text/css"/>
+  <title>Test Overflow</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var w1 = new Window({height: 100})
+    w1.setHTMLContent("<h1>Hello Word</h1><h1>Hello Word</h1><h1>Hello Word</h1><h1>Hello Word</h1><h1>Hello Word</h1>");
+    w1.show();
+
+    var w2 = new Window({height: 100})
+    w2.setHTMLContent("<h1>Hello Word</h1><h1>Hello Word</h1><h1>Hello Word</h1><h1>Hello Word</h1><h1>Hello Word</h1>");
+    w2.show();
+  </script>
+</body>
+</html>

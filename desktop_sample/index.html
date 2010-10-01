@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<head>  
+  <script type="text/javascript" src="javascripts/prototype.js"> </script>
+  <script type="text/javascript" src="javascripts/effects.js"> </script>                                                        
+  <script type="text/javascript" src="javascripts/window.js"> </script>
+  <script type="text/javascript" src="javascripts/desktop.js"> </script>
+ 	<link href="themes/default.css" rel="stylesheet" type="text/css"/>
+ 	<link href="themes/alphacube.css" rel="stylesheet" type="text/css"/>
+  <link href="themes/lighting.css" rel="stylesheet" type="text/css"/>
+  <link href="themes/mac_os_x.css" rel="stylesheet" type="text/css"/>
+  <link href="themes/vista_glass.css" rel="stylesheet" type="text/css"/>
+  <link href="themes/vista_normal.css" rel="stylesheet" type="text/css"/>
+
+
+  <link href="style.css" rel="stylesheet" type="text/css"/>  
+  <style type="text/css">   
+  body {
+    background: url(backgrounds/blue_strips_bg.png) repeat;     
+  }
+  </style>
+  
+  <title>Desktop Sample</title>
+</head>
+<body>
+<div id="control_panel" style="display:none">
+  <div id="theme"> 
+    Theme:
+    <select onchange="changeTheme(this)">
+      <option selected=selected>Alphacube</option>
+      <option>Mac OS X</option>
+      <option>Blue lighting</option>
+      <option>Green lighting</option>
+      <option>Vista Glass</option>
+      <option>Vista Normal</option>
+    </select>
+  </div> 
+  <div id="background"> 
+    Background:
+    <select onchange="changeBackground(this)">
+      <option>Blue strips</option>
+      <option>Black strips</option>
+      <option>White</option>
+    </select>
+  </div>          
+</div>
+
+<div id="test01" style="display:none">
+  <a href="#" onclick="openWindowCP(); return false">Open control panel</a><br/>
+  <a href="#" onclick="closeCP(); return false">Close control panel</a><br/>
+  <a href="#" onclick="maximizeCP(); return false">Maximize control panel</a><br/>
+  <a href="#" onclick="minimizeCP(); return false">Minimize control panel</a><br/>
+</div>
+
+<div id="links">
+  <a href="#" onclick="openWindowCP(); return false">open control panel</a>
+  <a href="#" onclick="openWindowTest01(); return false">open test01</a>
+  <a href="#" onclick="openWindowTest02(); return false">open test02</a>
+  <a href="#" onclick="openWindowRefresh(); return false">open refresh</a>
+  <a href="#" onclick="openWindowExternalCP(); return false"> external</a>
+</div>
+</body>
+</html>
+
+<!--
+1- a window called "controlpanel" which you can change the background and theme (no external page)
+2- a window called "test01" that has links inside to open, close, maximize, minimize the "controlpanel" (4 links in total)(no external page).
+3- a window called "test02" that is loading an external page which that page has 8 links to opne, close, maximize, minimize the "controlpanel" and "test01"
+4- a window called "refresh" that has an external page which that page has a refresh link to refresh the external page that is loaded in this window.
+5- a window called "external" that has an external page which that page has the change background and theme selection (like controlpanel window but this one is loaded in an external page). 
+-->
+

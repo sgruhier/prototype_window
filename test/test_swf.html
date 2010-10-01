@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<head>  
+  <script type="text/javascript" src="../javascripts/prototype.js"> </script>
+  <script type="text/javascript" src="../javascripts/effects.js"> </script>                                                        
+  <script type="text/javascript" src="../javascripts/window.js"> </script>
+  <script type="text/javascript" src="../javascripts/window_effects.js"> </script>
+  <script type="text/javascript" src="../javascripts/debug.js"> </script>
+ 	<link href="../themes/default.css" rel="stylesheet" type="text/css"/>
+ 	<link href="../themes/alphacube.css" rel="stylesheet" type="text/css"/>
+  <title>Test Scroll</title>
+</head>
+<body>   
+  
+  <script type="text/javascript">        
+  function openWindow() {
+    var win = new Window({className: 'alphacube', width:600, height:500, destroyOnClose: true})
+    win.getContent().update('<object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/W80fsB7kzz8"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/W80fsB7kzz8" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object>')
+    win.show();
+  }
+  
+  openWindow();
+ </script>
+
+ 
+</body>
+</html>

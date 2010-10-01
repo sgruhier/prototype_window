@@ -1,0 +1,373 @@
+/* Focused windows */
+.overlay_vista_glass {
+	background-color: #85BBEF;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	z-index:5000;
+}
+
+.vista_glass_nw {
+	background: transparent url(vista_glass/tl.png) no-repeat 0 0;			
+	width:15px;
+	height:35px;
+}
+
+.vista_glass_n {
+  background: transparent url(vista_glass/t.png) repeat-x 0 0;			
+  height:35px;
+}
+
+.vista_glass_ne {
+  background: transparent url(vista_glass/tr.png) no-repeat 0 0;			
+  width:15px;	  
+  height:35px;
+}
+
+.vista_glass_w {
+  background: transparent url(vista_glass/l.png) repeat-y top left;			
+  width:15px;
+}
+
+.vista_glass_e {
+  background: transparent url(vista_glass/r.png) repeat-y top right;			
+  width:15px;	  
+}
+
+.vista_glass_sw {
+  background: transparent url(vista_glass/bl.png) no-repeat 0 0;			
+  width:15px;
+  height:40px;
+}
+
+.vista_glass_s {
+  background: transparent url(vista_glass/b.png) repeat-x 0 0;			
+  height:40px;
+}
+
+.vista_glass_se, .vista_glass_sizer {
+  background: transparent url(vista_glass/br.png) no-repeat 0 0;			
+  width:33px;
+  height:40px;
+}
+
+.vista_glass_sizer {
+	cursor:se-resize;	
+}
+
+.vista_glass_close {
+	width: 43px;
+	height: 17px;
+	background: transparent url(vista_glass/close.png) no-repeat 0 0;			
+	position:absolute;
+	top:9px;
+	right:17px;
+	cursor:pointer;
+	z-index:1000;;
+}
+
+.vista_glass_minimize {
+	width: 26px;
+	height: 17px;
+	background: transparent url(vista_glass/minimize.png) no-repeat 0 0;			
+	position:absolute;
+	top:9px;
+	right:85px;
+	cursor:pointer;
+	z-index:1000;
+}
+
+.vista_glass_maximize {
+	width: 27px;
+	height: 17px;
+	background: transparent url(vista_glass/maximize.png) no-repeat 0 0;			
+	position:absolute;
+	top:9px;
+	right:59px;
+	cursor:pointer;
+	z-index:1000;
+}
+
+.vista_glass_title {
+	float:left;
+	height:14px;
+	font-family: Tahoma, Arial, sans-serif;
+	font-weight:bold;
+	font-size:12px;
+	text-align:left;
+	margin-top:8px;
+	color:#000000;
+	width:100%;
+}
+
+.vista_glass_content {
+	overflow:auto;
+	color: #222;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 10px;
+	background:#FFF;
+}
+.vista_glass_s .status_bar {
+  padding-bottom:24px;
+}
+
+/* FOR IE */
+* html .vista_glass_nw {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/tl.png", sizingMethod="crop");
+}
+
+* html .vista_glass_n {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/t.png", sizingMethod="scale");
+}
+
+* html .vista_glass_ne {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/tr.png", sizingMethod="crop");
+}
+
+* html .vista_glass_w {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/l.png", sizingMethod="scale");
+}
+
+* html .vista_glass_e {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/r.png", sizingMethod="scale");
+}
+
+* html .vista_glass_sw {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/bl.png", sizingMethod="crop");
+}
+
+* html .vista_glass_s {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/b.png", sizingMethod="scale");
+}
+
+* html .vista_glass_se {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/br.png", sizingMethod="crop");
+}
+
+* html .vista_glass_sizer {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/br.png", sizingMethod="crop");
+}
+
+* html .vista_glass_close {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/close.png", sizingMethod="crop");
+}
+
+* html .vista_glass_minimize {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/minimize.png", sizingMethod="crop");
+}
+
+* html .vista_glass_maximize {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/maximize.png", sizingMethod="crop");
+}
+
+
+/* Blured windows */
+.overlay_blur_vista_glass {
+	background-color: #85BBEF;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+	z-index:5000;
+}
+
+.blur_vista_glass_nw {
+  background: transparent url(vista_glass/tl_blur.png) no-repeat 0 0;			
+  width:15px;
+  height:35px;
+}
+
+.blur_vista_glass_n {
+  background: transparent url(vista_glass/t_blur.png) repeat-x 0 0;			
+  height:35px;
+}
+
+.blur_vista_glass_ne {
+  background: transparent url(vista_glass/tr_blur.png) no-repeat 0 0;			
+  width:15px;	  
+  height:35px;
+}
+
+.blur_vista_glass_w {
+  background: transparent url(vista_glass/l_blur.png) repeat-y top left;			
+  width:15px;
+}
+
+.blur_vista_glass_e {
+  background: transparent url(vista_glass/r_blur.png) repeat-y top right;			
+  width:15px;	  
+}
+
+.blur_vista_glass_sw {
+  background: transparent url(vista_glass/bl_blur.png) no-repeat 0 0;			
+  width:15px;
+  height:40px;
+}
+
+.blur_vista_glass_s {
+  background: transparent url(vista_glass/b_blur.png) repeat-x 0 0;			
+  height:40px;
+}
+
+.blur_vista_glass_se, .blur_vista_glass_sizer {
+	background: transparent url(vista_glass/br_blur.png) no-repeat 0 0;			
+	width:33px;
+	height:40px;
+}
+
+.blur_vista_glass_sizer {
+	cursor:se-resize;	
+}
+
+.blur_vista_glass_close {
+	width: 43px;
+	height: 17px;
+	background: transparent url(vista_glass/close_blur.png) no-repeat 0 0;			
+	position:absolute;
+	top:9px;
+	right:17px;
+	cursor:pointer;
+	z-index:1000;
+}
+
+.blur_vista_glass_minimize {
+	width: 26px;
+	height: 17px;
+	background: transparent url(vista_glass/minimize_blur.png) no-repeat 0 0;			
+	position:absolute;
+	top:9px;
+	right:85px;
+	cursor:pointer;
+	z-index:1000;
+}
+
+.blur_vista_glass_maximize {
+	width: 27px;
+	height: 17px;
+	background: transparent url(vista_glass/maximize_blur.png) no-repeat 0 0;			
+	position:absolute;
+	top:9px;
+	right:59px;
+	cursor:pointer;
+	z-index:1000;
+}
+
+.blur_vista_glass_title {
+	float:left;
+	height:14px;
+	font-family: Tahoma, Arial, sans-serif;
+	font-weight:bold;
+	font-size:12px;
+	color:#666666;
+	text-align:left;
+	margin-top:8px;
+	width:100%;
+}
+
+.blur_vista_glass_content {
+	overflow:auto;
+	color: #222;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 10px;
+	background:#FFF;
+}
+.blur_vista_glass_s .status_bar {
+  padding-bottom:24px;
+}
+
+/* FOR IE */
+* html .blur_vista_glass_nw {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/tl_blur.png", sizingMethod="crop");
+}
+
+* html .blur_vista_glass_n {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/t_blur.png", sizingMethod="scale");
+}
+
+* html .blur_vista_glass_ne {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/tr_blur.png", sizingMethod="crop");
+}
+
+* html .blur_vista_glass_w {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/l_blur.png", sizingMethod="scale");
+}
+
+* html .blur_vista_glass_e {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/r_blur.png", sizingMethod="scale");
+}
+
+* html .blur_vista_glass_sw {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/bl_blur.png", sizingMethod="crop");
+}
+
+* html .blur_vista_glass_s {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/b_blur.png", sizingMethod="scale");
+}
+
+* html .blur_vista_glass_se {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/br_blur.png", sizingMethod="crop");
+}
+
+* html .blur_vista_glass_sizer {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/br_blur.png", sizingMethod="crop");
+}
+
+* html .blur_vista_glass_close {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/close_blur.png", sizingMethod="crop");
+}
+
+* html .blur_vista_glass_minimize {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/minimize_blur.png", sizingMethod="crop");
+}
+
+* html .blur_vista_glass_maximize {
+	background-color: transparent;
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../themes/vista_glass/maximize_blur.png", sizingMethod="crop");
+}
+
